@@ -1,7 +1,9 @@
 "use strict"
 
 /*
+* BAsed off of the original work of Vadim Ogievestky, 10/17/2015
 * Made with love by Vadim Ogievetsky for Annie Albagli (Valentine's Day 2011)
+*
 * Powered by Mike Bostock's D3
 *
 * For me on GitHub:  https://github.com/vogievetsky/KoalasToTheMax
@@ -59,7 +61,7 @@ var koala = {
   koala.supportsSVG = function() {
     return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', "svg").createSVGRect;
   };
-
+  //create a rectangle 
   function Rect(vis, xi, yi, size, color, children, layer, onSplit) {
     this.vis = vis;
     this.x = size * (xi + 0.5);
